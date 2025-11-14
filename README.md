@@ -87,19 +87,11 @@ SELECT * FROM supply_chain_db.gold_inventory_kpi;
 Combine these visuals into a single **Databricks Dashboard** and publish it.
 
 **Dashboard Preview:**
-![Supplier Inventory Dashboard](Supplier-Inventory-Dashboard.png)
+![SC-Inventory_project_dashboard.png](SC- Inventory project dashboard.png)
 
 ---
 
-### **Step 6: AI Enhancement Ideas**
-
-* 🧠 Add forecasting for **Next Month’s Inventory Demand** using Databricks **AutoML**.
-* 🤖 Use **Databricks Genie AI Assistant** to generate SQL queries or insights.
-* 📈 Integrate **MLflow** for experiment tracking and model versioning.
-
----
-
-### **Step 7: Version Control with GitHub**
+### **Step 6: Version Control with GitHub**
 
 1. In Databricks → **Repos → Add Repo → Connect to GitHub**.
 2. Commit each notebook (`01_Bronze_Ingestion`, `02_Silver_Transformation`, `03_Gold_Modeling`).
@@ -125,16 +117,27 @@ Databricks Dashboard
 
 ---
 
-## 📈 KPI Summary (Sample)
+## 📈 KPI Summary
 
-| KPI                       | Description                                 | Example Value |
-| ------------------------- | ------------------------------------------- | ------------- |
-| **Total Stock**           | Total available units across all warehouses | 2,340,000     |
-| **Avg Lead Time**         | Average time from order to fulfillment      | 5.4 days      |
-| **High-Risk Inventory %** | Portion of SKUs at risk of shortage         | 18%           |
-| **Warehouse Count**       | Total number of active warehouses           | 3             |
+| **KPI**                        | **Description**                                           | **Example Value** |
+| ------------------------------ | --------------------------------------------------------- | ----------------- |
+| **Total Inventory Value**      | Total dollar value of all inventory across warehouses     | **$45M**          |
+| **Fill Rate %**                | Percentage of customer demand met without stockouts       | **94.2%**         |
+| **Days of Inventory (DOI)**    | Average days current stock will last based on demand      | **38 Days**       |
+| **High-Risk SKUs**             | Number of SKUs with Stockout Risk Score ≥ 75              | **127 SKUs**      |
+| **Annual Carrying Cost**       | Estimated annual cost of holding inventory                | **$9M**           |
+| **Avg Warehouse Health Score** | Health score across all warehouses (availability + aging) | **86/100**        |
+| **Stockout Alert Trend**       | 30-day trend of SKUs hitting stockout alert levels        | **Peak: 52 SKUs** |
+| **ABC Class A Contribution**   | % of total inventory value contributed by Class A items   | **80%**           |
+| **Excess Inventory %**         | Portion of items with DOI > 90 days                       | **12%**           |
+| **Dead Stock Value**           | Value of SKUs with negligible sales (<0.5 daily avg)      | **$1.2M**         |
+| **Supplier Performance Score** | Weighted score across quality, lead time & delivery       | **88/100**        |
+| **On-Time Delivery %**         | Avg OTD rate of top suppliers                             | **96%**           |
+| **Avg Supplier Lead Time**     | Average replenishment time across all suppliers           | **7.2 Days**      |
+| **Forecast Accuracy (MAPE)**   | Accuracy of 90-day demand forecast                        | **11% MAPE**      |
+| **Expiring Soon SKUs**         | SKUs expiring within 7–30 days                            | **68 SKUs**       |
+| **AI Reorder Recommendations** | Number of SKUs currently below reorder point              | **54 SKUs**       |
 
----
 
 ## 🧩 Future Enhancements
 
@@ -145,7 +148,7 @@ Databricks Dashboard
 ---
 
 **👩‍💻 Author:** [Ananya Shivhare](https://github.com/ananyashivhare)
-**📅 Created:** November 2025
+**📅 Created:** November 14, 2025
 **🧠 Focus:** Data Engineering, AI, and Analytics in Supply Chain Optimization
 
 ```
