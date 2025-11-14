@@ -1,4 +1,3 @@
-```markdown
 # 🧱 End-to-End Data Engineering Project — Supply Chain Inventory (AI-Enhanced)
 
 ## 🎯 Project Objective  
@@ -87,7 +86,8 @@ SELECT * FROM supply_chain_db.gold_inventory_kpi;
 Combine these visuals into a single **Databricks Dashboard** and publish it.
 
 **Dashboard Preview:**  
-![SC-Inventory_project_dashboard](SC-Inventory_project_dashboard.png)
+![SCI-project-dashboard](SCI-project-dashboard.png)
+
 ---
 
 ### **Step 6: Version Control with GitHub**
@@ -150,4 +150,3 @@ Databricks Dashboard
 **📅 Created:** November 14, 2025
 **🧠 Focus:** Data Engineering, AI, and Analytics in Supply Chain Optimization
 
-```
