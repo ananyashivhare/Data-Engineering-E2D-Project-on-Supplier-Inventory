@@ -86,9 +86,8 @@ SELECT * FROM supply_chain_db.gold_inventory_kpi;
 
 Combine these visuals into a single **Databricks Dashboard** and publish it.
 
-**Dashboard Preview:**
-![SC-Inventory_project_dashboard.png](SC- Inventory project dashboard.png)
-
+**Dashboard Preview:**  
+![SC-Inventory_project_dashboard](SC-Inventory_project_dashboard.png)
 ---
 
 ### **Step 6: Version Control with GitHub**
